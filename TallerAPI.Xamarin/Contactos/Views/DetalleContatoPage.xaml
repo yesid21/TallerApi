@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Contactos.Views.DetalleContatoPage">
+    <Grid Margin="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Grid.ColumnSpan="2" VerticalOptions="Center" Text="{Binding MeGusta}"/>
+        
+        <Label Text="Usuario: " Grid.Column="0" Grid.Row="1"/>
+        <Label Text="{Binding Usuario}" Grid.Column="1" Grid.Row="1"/>
+
+        <Label Text="Compartido: " Grid.Column="0" Grid.Row="2"/>
+        <Label Text="{Binding VecesCompartido}" Grid.Column="1" Grid.Row="2"/>
+
+        <Label Text="Cantidad: " Grid.Column="0" Grid.Row="3"/>
+        <Label Text="{Binding Descripcion}" Grid.Column="1" Grid.Row="3"/>
+    </Grid>
+</ContentPage>
